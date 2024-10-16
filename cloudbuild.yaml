@@ -4,7 +4,7 @@ steps:
       [
         "build",
         "-t",
-        "outhamerica-east1-docker.pkg.dev/tienda-438815/tienda/client:latest",
+        "southamerica-east1-docker.pkg.dev/tienda-438815/tienda/client:latest",
         "-f",
         "dockerfile",
         "--platform=linux/amd64",
@@ -14,5 +14,5 @@ steps:
     args:
       [
         "push",
-        "outhamerica-east1-docker.pkg.dev/tienda-438815/tienda/client:latest",
+        "southamerica-east1-docker.pkg.dev/tienda-438815/tienda/client:latest",
       ]
