@@ -16,3 +16,5 @@ steps:
         "push",
         "southamerica-east1-docker.pkg.dev/tienda-438815/tienda/client:latest",
       ]
+
+logsBucket: "gs://tu-bucket-de-logs"  # Agrega el nombre del bucket aquí
