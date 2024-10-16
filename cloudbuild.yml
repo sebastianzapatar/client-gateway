@@ -1,0 +1,18 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "build",
+        "-t",
+        "outhamerica-east1-docker.pkg.dev/tienda-438815/tienda/client:latest",
+        "-f",
+        "dockerfile",
+        "--platform=linux/amd64",
+        ".",
+      ]
+  - name: "gcr.io/cloud-builders/docker"
+    args:
+      [
+        "push",
+        "outhamerica-east1-docker.pkg.dev/tienda-438815/tienda/client:latest",
+      ]
